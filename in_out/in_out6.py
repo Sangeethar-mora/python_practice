@@ -25,18 +25,38 @@ with open("test.txt", "w") as file:
 with open("test.txt","r") as file:
     content = file.readlines()
 
-with open("Snew_test.txt","w") as file:
+with open("new_test.txt","w") as file:
     c = 1
     for i in content:
-        print(i)
-    if c != 5:
-        file.write(i)
-    c += 1
-print("-----")
+        if c != 5:
+            file.write(i)
+        c += 1
+
 with open("new_test.txt", "r") as file:
     content = file.read()
     print(content)
 
+############ using functions ###############
+
+def skipping_line5():
+    with open("test.txt", "w") as file:
+        file.write("line1\nline2\nline3\nline4\nline5\nline6\nline7")
+
+    with open("test.txt","r") as file:
+        content = file.readlines()
+
+    with open("new_test.txt","w") as file:
+        c = 1
+        for i in content:
+            if c != 5:
+                file.write(i)
+            c += 1
+
+    with open("new_test.txt", "r") as file:
+        content = file.read()
+    return content
+
+print(skipping_line5())
 
 
 

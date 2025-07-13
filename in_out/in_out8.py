@@ -16,3 +16,13 @@ price = 450.00
 
 print(f"I have {totalMoney} dollars so I can buy {quantity} football for {price} dollars.")
 
+##################### using functions ###############
+
+def string_format():
+    result = ""
+    result += f"I have {totalMoney} dollars so I can buy {quantity} football for {price} dollars."
+    return result
+totalMoney = 1000
+quantity = 3
+price = 450.00
+print(string_format())

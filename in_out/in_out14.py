@@ -17,3 +17,16 @@ print("-"*17)
 for i in range(3):
     print(f"{names[i]:<12}{scores[i]}")
 
+############# using functions ############
+
+def tabular_output(names, scores):
+    result = ""
+    result += f"{"Name":<10} Scores"+"\n"
+    result += "-"*17+"\n"
+    for i in range(3):
+        result+=f"{names[i]:<12}{scores[i]}"+"\n"
+    return result
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 92, 78]
+print(tabular_output(names, scores))
+

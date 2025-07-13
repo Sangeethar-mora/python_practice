@@ -15,3 +15,16 @@ Name1, Name2, Name3 = input("enter three strings: ").split()
 print("Name1:", Name1)
 print("Name2:", Name2)
 print("Name3:", Name3)
+
+############# using functions #############
+
+def three_strings_one_input():
+     Name1, Name2, Name3 = input("enter three strings: ").split(" ")
+     return Name1, Name2, Name3
+
+Name1, Name2, Name3 = three_strings_one_input()
+print("Name1:", Name1)
+print("Name2:", Name2)
+print("Name3:", Name3)
+
+

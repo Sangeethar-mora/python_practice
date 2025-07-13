@@ -19,4 +19,12 @@ with open("test.txt","r") as file:
     filr_r = file.readlines()
     print(filr_r[3])
 
+#############3 using functions #############
+
+def read_line4():
+    with open("test.txt","r") as file:
+        filr_r = file.readlines()
+    return filr_r[3]
+
+print(read_line4())
 

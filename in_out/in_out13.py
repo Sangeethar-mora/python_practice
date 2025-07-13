@@ -17,3 +17,11 @@ word = input("enter the word: ")
 number = input("enter the number: ")
 
 print(f"{word:>20}{number}")
+
+################ using functions ################
+
+def Right_Aligned_Output(word, number):
+    return f"{word:>20}{number}"
+word = input("enter the word: ")
+number = input("enter the number: ")
+print(Right_Aligned_Output(word, number))

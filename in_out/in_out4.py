@@ -10,6 +10,12 @@
 
 number = 458.541315
 print(str(number)[:6])
-
 print("%0.2f" % number)
+
+################# using functions ###########
+
+def number_two_decimal(number):
+    return "%0.2f" % number
+print(number_two_decimal(458.541315))
+
 

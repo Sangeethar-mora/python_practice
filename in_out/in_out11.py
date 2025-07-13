@@ -12,3 +12,17 @@ while True:
         percentage = result*100
         print("%.2f" % percentage,"%")
         break
+
+################# using definations ##################
+
+def percentage_display(Denominator, Numarator):
+    if Denominator == 0:
+        return "Denominator can not be zero"
+    else:
+        result = (Numarator/Denominator)
+        percentage = result * 100
+        return "%0.2f" % percentage + " %"
+Denominator = int(input("enter the denominator: "))
+Numarator = int(input("enter the numarator: "))
+print(percentage_display(Denominator, Numarator))
+

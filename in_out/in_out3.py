@@ -3,7 +3,14 @@
 
 num = int(input("enter number: "))
 print(oct(num))
-
 print("%o" % num)
-
 print("%o" % 8)
+
+########## using functions ###########
+
+def octal_number(number):
+    result = oct(number)
+    result1 =" %o" % number
+    return result, result1
+number = int(input("enter number: "))
+print(octal_number(number))
