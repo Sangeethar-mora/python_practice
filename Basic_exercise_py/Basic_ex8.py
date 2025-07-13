@@ -19,3 +19,17 @@ n = 1
 while n < 6:
     print((str(n)+" ")*n)
     n = n+1
+
+#################### using functions #############
+
+def pattern():
+    for i in range(1, 6):
+        for j in range(i):
+            print(i, end=" ")
+        print()
+pattern()
+
+def pattern():
+    for i in range(1, 6):
+        print((str(i)+" ")*i)
+pattern()

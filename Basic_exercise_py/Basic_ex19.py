@@ -23,4 +23,23 @@ print("Altarnate prime numbers 1 to 20:")
 for i in prime_num[::2]:
     print(i,end = " ")
 
+########## using functions #################
 
+def prime_numbers():
+    alternative_primenumbers = []
+    result = ""
+    prime_num = []
+    for i in range(2,20):
+        for j in range(2,i):
+            if i % j == 0:
+                break
+        else:
+            prime_num.append(i)
+
+    alternative_primenumbers = prime_num[::2]
+    for i in alternative_primenumbers:
+        result+=str(i)+" "
+    return result
+answer = prime_numbers()
+print("Altarnate prime numbers 1 to 20:")
+print(answer)

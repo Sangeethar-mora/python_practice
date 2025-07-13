@@ -24,3 +24,9 @@ exponent = int(input("exponent = "))
 result = base ** exponent
 print(base, "raises to the power of", exponent, "is:", result)
 
+########### using functions ##########
+
+def base_exponent(base, exponent):
+    result = base ** exponent
+    print(base, "raises to the power of", exponent, "is:", result)
+base_exponent(exponent = 5,base = 2)

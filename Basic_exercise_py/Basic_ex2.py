@@ -16,7 +16,15 @@ for i in range(11):
         sm = 0
     #
     print("current number", i, "previous number", pn, "sum:", sm)
+################# using functions #######
 
+def current_prev_sum():
+    print("Current Number 0 Previous Number 0 Sum:  0")
+    for i in range(1, 10):
+        Previous = i-1
+        sum_of_all = i+(i-1)
+        print('Current Number', i, 'Previous Number', Previous, 'Sum: ', sum_of_all)
+current_prev_sum()
 
 
 

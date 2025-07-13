@@ -12,3 +12,24 @@ for i in my_string[int_rm:]:
 for i in range(len(my_string)):
     if i >= int_rm:
         print(my_string[i],end="")
+############################## using functions #################
+# method one
+
+def rm_char_from_string(string, num_to_rm):
+    return string[num_to_rm: ]
+print(rm_char_from_string('pynative', 4))
+
+# Second method
+
+def rm_char_from_string(string, num_to_rm):
+    for i in range(len(string)):
+        if i >= num_to_rm:
+            print(string[i],end="")
+rm_char_from_string('pynative', 2)
+
+#third method
+
+def rm_char_from_string(string, num_to_rm):
+    for i in string[num_to_rm:]:
+         print(i,end="")
+rm_char_from_string('pynative', 4)

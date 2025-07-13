@@ -15,3 +15,10 @@ for i in given_list:
         if i % 5 == 0:
                 print(i)
 
+def divisible_by_5(given_list):
+        for i in given_list:
+                if i % 5 == 0:
+                        print(i)
+given_list = [10, 20, 33, 46, 55]
+divisible_by_5(given_list)
+

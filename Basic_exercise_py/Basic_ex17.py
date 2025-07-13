@@ -15,5 +15,14 @@ for i in range(15):
     res = num1 + num2
     num2 = num1
     num1 = res
-
+############ using functions ###########
+def fibonacci_sequence():
+    first_number = 0
+    second_number = 1
+    for i in range(15):
+        print(first_number,end = " ")
+        result = first_number + second_number
+        second_number = first_number
+        first_number = result
+fibonacci_sequence()
 

@@ -23,6 +23,19 @@ if (number1*number2) >= 1000:
     print(number1+number2)
 else:
     print(number1*number2)
-    
-    
+##### using functions ##########33
+
+def multiplication_sum(num1, num2):
+    product = num1 * num2
+    if product >= 1000:
+        return  num1 + num2
+    else:
+        return product
+
+result = multiplication_sum(20, 30)
+print(result)
+
+result = multiplication_sum(40, 30)
+print(result)
+
 

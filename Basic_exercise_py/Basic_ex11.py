@@ -11,10 +11,27 @@ result = num1[: : -1]
 for i in result:
     print(i, end = " ")
 
-######################
+##################################
 num = 4654
 
 while num > 0:
     rm = num%10
     num = num//10
     print(rm,end = " ")
+
+################ using functions #################
+
+number = 7536
+def reverse_number():
+    result = ""
+    global number
+    while number > 0:
+        rm = number % 10
+        number = number // 10
+        result+= str(rm) + " "
+    return result
+
+answer = reverse_number()
+
+print(answer)
+

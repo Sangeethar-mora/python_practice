@@ -3,11 +3,11 @@
 #
 # Given:
 #
-# numbers_x = [10, 20, 30, 40, 10]
-# # output True
-#
-# numbers_y = [75, 65, 35, 75, 30]
-# # Output False
+numbers_x = [10, 20, 30, 40, 10]
+# output True
+
+numbers_y = [75, 65, 35, 75, 30]
+# Output False
 
 
 numbers_x = [10, 20, 30, 40, 10]
@@ -28,13 +28,15 @@ if first == last:
 else:
     print("false",numbers_y)
 
-#########################################3
-numbers_x = [10, 20, 30, 40, 10]
-c = 0
-x = []
+#####################    Using Functions   ####################
 
-for i in numbers_x:
-    if (c == 0) or c == (len(numbers_x)-1):
-        x.append(i)
-    c+=1
-print(x)
+def first_last_same(numx):
+    first = numx[0]
+    last = numx[-1]
+    if first == last:
+        print("true")
+    else:
+        print("false")
+first_last_same([10, 20, 30, 40, 10])
+
+

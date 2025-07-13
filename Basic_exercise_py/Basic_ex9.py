@@ -24,3 +24,16 @@ if(n==rev):
 else:
     print(False)
 
+############# using functions ##################
+
+def palindrom_number(number):
+    rev = 0
+    while number > 0:
+        rem = number % 10
+        rev = (rev * 10) + rem
+        number = number // 10
+    if number == rev:
+        return True
+    else:
+        return False
+print(palindrom_number(1231))
