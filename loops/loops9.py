@@ -14,3 +14,12 @@
 
 for i in range(-10,0,1):
     print(i)
+
+####### using functions ######
+
+def disply_numbers():
+    result = ""
+    for numbers in range(-10, 0, 1):
+        result += str(numbers)+"\n"
+    return result
+print(disply_numbers())

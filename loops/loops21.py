@@ -21,5 +21,22 @@ for i in nested_list:
             flattend.append(i)
 print(flattend)
 
+###########  using functions #######
+
+def flatteend_nested_list(nested_list):
+    flattend = []
+    for i in nested_list:
+        if isinstance(i, list):
+            for j in i:
+                flattend.append(j)
+        else:
+            if isinstance(i, int):
+                flattend.append(i)
+    return flattend
+nested_list = [1, [2, 3], [4, 5, 6], 7, [8, 9]]
+print(flatteend_nested_list(nested_list))
+
+
+
 
 

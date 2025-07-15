@@ -20,3 +20,14 @@ for i in range(1,11):
     for j in range(1,11):
         print(i*j,end = " ")
     print()
+
+############# using functions #############
+def multiplication_table():
+    result = ""
+    for i in range(1,11):
+        result += f"multiplication table of: {i}"+"\n"
+        for j in range(1,11):
+            result += (str(i * j)+" ")
+        result += "\n"
+    return result
+print(multiplication_table())

@@ -33,3 +33,23 @@ for i in range(start, end):
         prime_num.append(i)
 for i in prime_num:
     print(i)
+
+############3 using functions #######
+
+def prime_number(start, end):
+    prime_list = []
+    result = ""
+    for i in range(start, end):
+        for j in range(2, i):
+            if i % j == 0:
+                break
+        else:
+            prime_list.append(i)
+    for i in prime_list:
+        result+=str(i)+"\n"
+    return result
+
+start = int(input("enter the start number"))
+end = int(input("enter the end of prime:"))
+print(prime_number(start, end))
+

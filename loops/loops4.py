@@ -17,3 +17,12 @@
 num = 2
 for i in range(1,11):
     print(i*num)
+
+####### using functions #######
+
+def multiplication_table(num = 2):
+    result = ""
+    for i in range(1,11):
+        result += f"{i*num}\n"
+    return result
+print(multiplication_table())

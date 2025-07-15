@@ -12,3 +12,16 @@ for i in range(1, 6):
         num = num+1
         print(num,end = " ")
     print()
+
+###### using functions #####
+
+def pattern():
+    result = ""
+    num = 0
+    for i in range(1, 6):
+        for j in range(i):
+            num = num+1
+            result += str(num)+" "
+        result += "\n"
+    return result
+print(pattern())

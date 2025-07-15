@@ -16,3 +16,18 @@ for i in range(10):
     res = cur + pev
     pev = cur
     cur = res
+# this print used just to print function method output in new line
+print()
+def fibonacci_series():
+    cur = 0
+    pev = 1
+    result = ""
+    for i in range(10):
+        result+=str(cur)+"  "
+        res = cur + pev
+        pev = cur
+        cur = res
+    return result
+
+print("Display Fibonacci series up to 10 terms")
+print(fibonacci_series())

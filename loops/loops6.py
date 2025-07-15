@@ -9,3 +9,17 @@ while n > 0:
     n = n//10
     count = count+1
 print(count)
+
+############### using functions #########
+
+n = 75869
+
+def count_total_digits():
+    global n
+    count = 0
+    while n > 0:
+        n = n//10
+        count = count + 1
+    return count
+
+print(count_total_digits())

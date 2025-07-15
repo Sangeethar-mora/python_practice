@@ -17,3 +17,11 @@ for i in range(5):
     print(i)
 else:
     print("done!")
+
+def successful_execution():
+    result = ""
+    for i in range(5):
+        result+=str(i)+"\n"
+    result+="done!"
+    return result
+print(successful_execution())

@@ -20,3 +20,20 @@ for i in numbers:
          continue
     elif i % 5 == 0:
         print(i)
+############# using functions ##############
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+def disply_numbers(numbers):
+    result = ""
+    for i in numbers:
+        if i > 500:
+            break
+        elif i > 150:
+            continue
+        elif i % 5 == 0:
+            result+=f"{i}\n"
+    return result
+sorted_list = disply_numbers([12, 75, 150, 180, 145, 525, 50])
+print(sorted_list)
+
+

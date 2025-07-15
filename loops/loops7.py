@@ -6,9 +6,19 @@
 # 3 2 1
 # 2 1
 # 1
-num = ""
+
 for i in range(5,0,-1):
     for j in range(i,0,-1):
         print(j,end = " ")
     print()
 
+##########3 using functions ###########
+
+def pattern():
+    result = ""
+    for i in range(5, 0, -1):
+        for j in range(i, 0, -1):
+            result += str(j)+" "
+        result += "\n"
+    return result
+print(pattern())

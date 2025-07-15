@@ -13,13 +13,20 @@
 num = 2
 terms = 5
 result = 0
-for i in range(1,terms):
-    num = num*10+2
-    result+=num
+current = num
+for i in range(terms):
+    result += current
+    current = current * 10 + num
 print(result)
 
+############## using functions #######3
 
-
-
-
+def sum_of_series_number(num , terms):
+    result = 0
+    current = num
+    for i in range(terms):
+        result += current
+        current = current * 10 + num
+    return result
+print(sum_of_series_number(2, 5))
 

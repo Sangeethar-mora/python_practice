@@ -17,3 +17,14 @@ num = int(input("give the number to get the range of the cube numbers"))
 for i in range(1, num+1):
     cube = i**3
     print(f"current Number is : {i} and the cube is {cube}")
+
+############## using functions ###########
+
+def calculate_cube(given_number):
+    result = ""
+    for i in range(1, given_number+1):
+        cube = i ** 3
+        result += f"current Number is : {i} and the cube is {cube}"+"\n"
+    return result
+given_number = int(input("give the number to get the range of the cube numbers"))
+print(calculate_cube(given_number))
