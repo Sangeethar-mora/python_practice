@@ -93,11 +93,11 @@ def print_by_max_list(count_wrd):
                 max_list.remove(i)
                 print(key, "appear", val, "times")
 
-def process_text(text):
+def final_text(text):
     words = extract_words(text)
     counts = count_words(words)
     print_by_max_list(counts)
 
 text = "Emma is good developer. Emma is a writer"
-process_text(text)
+final_text(text)
 
