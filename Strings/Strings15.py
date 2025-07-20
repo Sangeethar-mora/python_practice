@@ -8,7 +8,6 @@
 
 def remove_special_symbols(str1):
     wrd = ""
-    removed = ""
     for i in str1:
         if i not in ["&","*","/","@"]:
             wrd+=i

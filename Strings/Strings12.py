@@ -9,12 +9,12 @@
 # Last occurrence of Emma starts at index 43
 
 def position_of_string(str1):
-    find_word = "emma"
-    for i in str1:
-        if find_word in str1:
-            return True
-    else:
-        return False
+    find_word = []
+    for i in range(len(str1)):
+        if str1[i:i+4] == "emma":
+            find_word.append(i)
+    return find_word
+
 str1 = "Emma is a data scientist who knows Python. Emma works at google."
 index_position = position_of_string(str1)
 print(index_position)
